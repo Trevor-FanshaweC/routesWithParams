@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <title>Route Params with Vue</title>
+</head>
+
+<body>
+    <h1 class="hidden">Route Params 2 Ways</h1>
+
+    <main id="app">
+        <h2>Components Render Here</h2>
+        <router-link to="/">Splash Page</router-link>
+        <router-link :to="{name: 'home', params: { user: {username: 'Trevor'} }}">User Home Page</router-link>
+
+        <router-view></router-view>
+
+        <section>
+            <p>
+                Some other info here that might never change
+            </p>
+        </section>
+    </main>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
