@@ -5,7 +5,11 @@ import router from "./components/Router.js";
         router,
 
         data: {
-            message: "hello there"
+            username: "test user",
+
+            user: {
+                username: "test user"
+            }
         }
     }).$mount("#app");
 })();

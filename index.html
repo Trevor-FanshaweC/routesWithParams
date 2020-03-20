@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <h1 class="hidden">Route Params 2 Ways</h1>
+    <h1 class="hidden">Route Params 3 Ways</h1>
 
     <main id="app">
         <h2>Components Render Here</h2>
         <router-link to="/">Splash Page</router-link>
-        <router-link :to="{name: 'home', params: { user: {username: 'Trevor'} }}">User Home Page</router-link>
+        <router-link :to="{name: 'home', params: { user: username }}">User Home Page</router-link>
 
         <router-view></router-view>
 

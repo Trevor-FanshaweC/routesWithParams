@@ -1,13 +1,8 @@
 export default {
-    props: {
-        user: {
-            username: String
-        }
-    },
-
     template: `
     <section>
-        <h3>Welcome home {{ user.username }}!</h3>
+        <!-- we want to see the user name here -->
+        <h3>Welcome home {{this.$route.params.user}}!</h3>
     </section>
     `
 }
