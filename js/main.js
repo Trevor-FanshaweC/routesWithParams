@@ -10,6 +10,13 @@ import router from "./components/Router.js";
             user: {
                 username: "test user"
             }
+        },
+
+        methods: {
+            navigateToHome() {
+                this.$router.push({ name: "home", params: { user: this.user } })
+            }
+
         }
     }).$mount("#app");
 })();

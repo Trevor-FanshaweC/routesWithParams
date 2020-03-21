@@ -18,9 +18,8 @@
         <h3>Route name: {{ $route.name }} | Route parameters: {{ $route.params }}</h3>
         <h2>Components Render Here</h2>
         <router-link to="/">Splash Page</router-link>
-        <router-link :to="{name: 'home', params: { user: username }}">User Home Page</router-link>
 
-        <router-view></router-view>
+        <router-view @gohome="navigateToHome"></router-view>
 
         <section>
             <p>
